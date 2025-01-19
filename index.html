@@ -1,1 +1,159 @@
-Hello world!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adelina Miron Portofolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="hero">
+        <nav class="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/logo.svg" alt=""
+            /></a>
+            <div class="hamburger-menu btn2">
+              <div class="icon"></div>
+            </div>
+            <ul class="navbar-nav center-x-y">
+              <li class="nav-item">
+                <a class="nav-link" href="#featured-projects">Featured Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#expertise">Expertise & Tools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <a
+                class="btn-link nav-item flex align-items-center"
+                href="#resumee"
+                >Resumee <img src="./assets/arrow-white.svg" alt=""></a
+              >
+            </ul>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="content">
+            <h1>I'm Adelina Miron, an UX Engineer.</h1>
+            <p class="subtitle-2">
+              I combine design thinking and coding to create functional, user-focused digital experiences.
+            </p>
+          </div>
+          <video id="video" autoplay loop muted>
+            <source src="./assets/geometric-banner.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </header>
+    <section id="featured-projects">
+      <div class="container center-columns">
+        <h2>Our Team</h2>
+        <p class="subtitle-2">
+          Achieve the impossible every day
+        </p>
+        <div class="content">
+          <div class="location-items">
+            <a
+              href="./product-page/product-detail-page-1.html"
+              class="location-item"
+            >
+              <div class="location-img">
+                <img src="./assets/employee-1.jpg" alt="" />
+              </div>
+              <p class="subtitle-1">Erika Dam</p>
+              <p class="body-text">
+                She excels at coordinating teams and ensuring that all deadlines are met. 
+              </p>
+            </a>
+            <a href="" class="location-item">
+              <div class="location-img">
+                <img src="./assets/employee-2.jpg" alt="" />
+              </div>
+              <p class="subtitle-1">Ian Dooley</p>
+              <p class="body-text">
+                His expertise in sales and collaborative nature ensures smooth project execution.
+              </p>
+            </a>
+            <a href="" class="location-item">
+              <div class="location-img">
+                <img src="./assets/emoployee-3.jpg" alt="" />
+              </div>
+              <p class="subtitle-1">Paola Aguilar</p>
+              <p class="body-text">
+                Her passion for graphic and video editing makes her an integral part of the team.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="figma">
+      <div class="container">
+        <div class="center-columns">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/ziBIAovDMXhWYeMbWGL9oI/Wireframes---Clever-Spend?node-id=0-1&embed-host=share&footer=false&theme=dark" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact-us">
+      <div class="container">
+        <div class="center-columns">
+          <h2>Let's connect</h2>
+          <div class="contact-details">
+            <a class="phone-number" href="tel:"
+              ><img src="./assets/call.svg" alt="" />+1 (555) 123-4567</a
+            >
+            <a class="email-address" href="mailto:"
+              ><img src="./assets/email.svg" alt="" />company.class@example.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <a href="" class="logo"><img src="./assets/logo.svg" alt="" /></a>
+        <div class="privacy-links">
+          <a href="">Terms</a>
+          <a href="">Privacy</a>
+        </div>
+        <div class="social">
+          <a href=""><img src="./assets/youtube.svg" alt="" /></a>
+          <a href=""><img src="./assets/linkedin.svg" alt="" /></a>
+          <a href=""><img src="./assets/twitter.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.js"></script>
+  </body>
+</html>

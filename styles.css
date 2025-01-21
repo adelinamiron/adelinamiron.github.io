@@ -474,7 +474,16 @@ footer .container {
     font-size: 26px;
   }
 }
+.video-mob {
+  display: none;
+}
 @media (max-width: 992px) {
+  .video-mob {
+    display: block;
+  }
+  .location-item .video-desktop {
+    display: none;
+  }
   .social a {
     padding: 10px;
   }

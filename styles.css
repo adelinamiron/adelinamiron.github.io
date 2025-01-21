@@ -115,7 +115,8 @@ video {
 }
 .btn-link,
 .btn-link.nav-item {
-  color: var(--white);
+  color: var(--secondary-color);
+  background-color: var(--white);
   text-decoration: none;
   padding: 16px 32px;
   font-size: var(--font-inter);
@@ -126,6 +127,7 @@ video {
   display: flex;
   align-items: center;
   gap: 10px;
+  border-radius: 15px;
 }
 .btn-link img {
   width: 18px;
@@ -419,6 +421,16 @@ footer .container {
   max-width: 700px;
 }
 
+#timeline.clever-spend .subtitle-2 {
+  margin-bottom: 30px;
+}
+
+#timeline.clever-spend .btn-link {
+  margin-bottom: 60px;
+  background-color: var(--white);
+  color: var(--secondary-color);
+}
+
 .product-page .location-items {
   grid-template-columns: repeat(
     auto-fill,
@@ -466,6 +478,70 @@ footer .container {
 #problem .subtitle-2 {
   margin-bottom: 0;
 }
+.location-item .video-mob {
+  display: none;
+}
+
+.agency .location-items {
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.333% - 50px), 1fr));
+  width: 100%;
+}
+
+.agency .location-items {
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.333% - 50px), 1fr));
+  width: 100%;
+}
+.agency .location-video {
+  text-align: center;
+  border: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-container .subtitle-1 {
+  margin-bottom: 20px;
+}
+
+.flex-item {
+  flex: 1 1 calc(50% - 110px);
+  padding: 50px;
+}
+
+.flex-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-item ul li {
+  margin-bottom: 20px;
+  background-color: #232323;
+  padding: 16px 24px;
+  border-radius: 15px;
+  line-height: 1.6;
+}
+
+.group-container {
+  display: flex;
+  flex-direction: column;
+}
+.motion-graphics {
+  padding-top: 50px;
+}
+
+.development {
+  padding-bottom: 50px;
+}
+
+.ux-enhancements {
+  flex: 1 1 100%;
+}
+
+/* Responsive styling */
+
 @media (max-width: 1200px) {
   .nav-link {
     font-size: 18px;
@@ -474,11 +550,16 @@ footer .container {
     font-size: 26px;
   }
 }
-.video-mob {
-  display: none;
-}
+
 @media (max-width: 992px) {
-  .video-mob {
+  .findings {
+    margin-top: 20px;
+  }
+  #timeline.clever-spend .btn-link {
+    margin: 0 0 30px 0;
+    justify-content: center;
+  }
+  .location-item .video-mob {
     display: block;
   }
   .location-item .video-desktop {
@@ -638,6 +719,23 @@ footer .container {
   }
 }
 @media (max-width: 767px) {
+  .flex-item {
+    flex: 1 1 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .development {
+    padding-bottom: 0;
+  }
+
+  .motion-graphics {
+    padding-top: 0;
+  }
+
+  .group-container {
+    gap: 15px;
+  }
   .center-x-y {
     flex-flow: column;
     width: 100%;

@@ -176,6 +176,10 @@ header {
 section {
   margin-bottom: 100px;
 }
+
+.product-page section {
+  margin-bottom: 150px;
+}
 #expertise .content {
   display: flex;
   flex-flow: column;
@@ -436,7 +440,9 @@ footer .container {
 }
 
 #competitive-research img,
-#wireframes img {
+#wireframes img,
+#design img,
+#development img {
   width: 100%;
 }
 
@@ -451,6 +457,14 @@ footer .container {
   padding: 0 15px;
   line-height: 2;
 }
+
+#wireframes h2,
+#design h2 {
+  margin-bottom: 60px;
+}
+#problem .subtitle-2 {
+  margin-bottom: 0;
+}
 @media (max-width: 1200px) {
   .nav-link {
     font-size: 18px;
@@ -460,6 +474,9 @@ footer .container {
   }
 }
 @media (max-width: 992px) {
+  .product-page section {
+    margin-bottom: 50px;
+  }
   .btn2 .icon,
   .btn2 .icon:after,
   .btn2 .icon:before {
@@ -526,7 +543,7 @@ footer .container {
     display: flex;
     flex-flow: column;
   }
-  #video {
+  .video {
     height: auto;
     width: 100%;
     order: 0;
@@ -653,6 +670,13 @@ footer .container {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
+  }
+  .product-page .location-items {
+    gap: 0px;
+  }
+
+  .product-page video {
+    margin-top: 80px;
   }
   .location-items {
     display: flex;

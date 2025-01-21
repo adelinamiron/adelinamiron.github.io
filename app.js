@@ -14,4 +14,5 @@ $(document).ready(function () {
       video.currentTime = 0;
     }
   );
+  
 });

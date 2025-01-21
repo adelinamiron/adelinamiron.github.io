@@ -16,3 +16,26 @@ $(document).ready(function () {
   );
   
 });
+
+
+  // Add autoplay attribut on mobile
+
+  function updateVideoAutoplay() {
+    $(".video-thumb").each(function () {
+      if ($(window).width() < 992) {
+        $(this).prop("autoplay", true); // Add the autoplay attribute
+      } else {
+        $(this).removeProp("autoplay") // Remove the autoplay attribute
+      }
+    });
+  }
+
+  // Initial check when the page loads
+  $(document).ready(function () {
+    updateVideoAutoplay();
+  });
+
+  // Update on window resize
+  $(window).on("resize", function () {
+    updateVideoAutoplay();
+  });

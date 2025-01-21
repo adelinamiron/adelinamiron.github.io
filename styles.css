@@ -350,6 +350,7 @@ footer .container {
   display: block;
   padding: 20px;
   transition: 0.3s all;
+  border-radius: 15px;
 }
 .btn2 {
   position: absolute;
@@ -474,8 +475,11 @@ footer .container {
   }
 }
 @media (max-width: 992px) {
+  .social a {
+    padding: 10px;
+  }
   .product-page section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   .btn2 .icon,
   .btn2 .icon:after,
@@ -543,7 +547,7 @@ footer .container {
     display: flex;
     flex-flow: column;
   }
-  .video {
+  .hero video {
     height: auto;
     width: 100%;
     order: 0;
@@ -587,6 +591,13 @@ footer .container {
     margin-bottom: 10px;
     font-size: 28px;
     text-align: center;
+  }
+  #wireframes h2,
+  #design h2 {
+    margin-bottom: 20px;
+  }
+  .disclaimer {
+    margin-bottom: 0;
   }
   section {
     margin-bottom: 50px;

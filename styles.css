@@ -1,12 +1,11 @@
 :root {
   --main-bg-color: #000;
   --accent-color: #c6a78e;
-  --secondary-color: #0a0a0a;
   --cream: #e9e7de;
   --white: #fff;
   --light-green: #7e837f;
   --dark-green: #4a5253;
-  --dark-color: #0a0a0a;
+  --dark-color: #000;
   --font-inter: "Inter", sans-serif;
   --font-fira-mono: "Fira Mono", sans-serif;
   --font-body: 16px;
@@ -115,7 +114,7 @@ video {
 }
 .btn-link,
 .btn-link.nav-item {
-  color: var(--secondary-color);
+  color: var(--dark-color);
   background-color: var(--white);
   text-decoration: none;
   padding: 16px 32px;
@@ -354,50 +353,19 @@ footer .container {
   transition: 0.3s all;
   border-radius: 15px;
 }
-.btn2 {
-  position: absolute;
-  width: 45px;
-  height: 50px;
-  top: 4px;
-  right: 10px;
-  transition-duration: 0.5s;
-}
-.btn2 .icon {
-  transition-duration: 0.5s;
-  position: absolute;
-  width: 35px;
-  height: 2px;
-  top: 30px;
-  background-color: var(--cream);
-  border-radius: 10px;
-}
-.btn2 .icon:before {
-  transition-duration: 0.5s;
-  position: absolute;
-  width: 35px;
-  height: 2px;
-  background-color: var(--cream);
-  content: "";
-  top: -12px;
-  border-radius: 10px;
-}
-.btn2 .icon:after {
-  transition-duration: 0.5s;
-  position: absolute;
-  width: 35px;
-  height: 2px;
-  background-color: var(--cream);
-  content: "";
-  top: 12px;
-  border-radius: 10px;
-}
-.btn2:hover {
-  cursor: pointer;
-}
+
 .hamburger-menu {
   display: none;
 }
 
+.hamburger-menu a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--dark-color);
+}
 .product-page video {
   width: 100%;
   height: auto;
@@ -428,7 +396,7 @@ footer .container {
 #timeline.clever-spend .btn-link {
   margin-bottom: 60px;
   background-color: var(--white);
-  color: var(--secondary-color);
+  color: var(--dark-color);
 }
 
 .product-page .location-items {
@@ -455,7 +423,9 @@ footer .container {
 #competitive-research img,
 #wireframes img,
 #design img,
-#development img {
+#development img,
+#design-guide img,
+#ss img{
   width: 100%;
 }
 
@@ -619,10 +589,15 @@ footer .container {
     margin: 20px 0px 50px 0;
   }
   .hamburger-menu {
-    display: block;
     z-index: 10;
-    top: 10px;
-    right: 20px;
+    background-color: var(--white);
+    padding: 15px 16px;
+    border-radius: 15px;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
   .btn-link,
   .btn-link.nav-item {
@@ -681,6 +656,9 @@ footer .container {
     margin-bottom: 10px;
     font-size: 28px;
     text-align: center;
+  }
+  .product-page h2 {
+    text-align: left;
   }
   #wireframes h2,
   #design h2 {
@@ -848,5 +826,6 @@ footer .container {
   .logo,
   .navbar-brand {
     width: 140px;
+    margin: 0;
   }
 }

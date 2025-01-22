@@ -140,7 +140,7 @@ video {
   list-style-type: none;
 }
 .nav-link:hover {
-  color: var(--accent-color);
+  opacity: .8;
 }
 header {
   max-width: 1440px;
@@ -205,11 +205,11 @@ section {
 }
 .vertical {
   width: 1px;
-  background-color: #232323;
+  background-color: #3c3c3c;
   height: auto;
 }
 .horizontal {
-  background-color: #232323;
+  background-color: #3c3c3c;
   height: 1px;
   width: 100%;
 }
@@ -253,7 +253,7 @@ section {
   position: relative;
   overflow: hidden;
   width: 100%;
-  border: 1px solid #232323;
+  border: 1px solid #3c3c3c;
   border-radius: 15px;
   margin-bottom: 20px;
 }
@@ -347,7 +347,7 @@ footer .container {
   margin-top: 30px;
 }
 .social a {
-  border: 1px solid #232323;
+  border: 1px solid #3c3c3c;
   display: block;
   padding: 20px;
   transition: 0.3s all;
@@ -431,7 +431,7 @@ footer .container {
 
 .findings {
   width: 100%;
-  border: 1px solid #232323;
+  border: 1px solid #3c3c3c;
   border-radius: 15px;
   padding: 50px;
   box-sizing: border-box;

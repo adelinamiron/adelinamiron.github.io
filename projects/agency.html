@@ -19,6 +19,20 @@
   </head>
 
   <body class="product-page">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JTCLX9N2W9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JTCLX9N2W9");
+    </script>
     <header>
       <nav class="navbar">
         <div class="container">
@@ -37,14 +51,19 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#expertise">Expertise & Tools</a>
+              <a class="nav-link" href="../index.html#expertise"
+                >Expertise & Tools</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <a class="btn-link nav-item flex align-items-center" href="../assets/resume-adelina.pdf"
-              > <img src="../assets/export-icon.svg" alt=""
-            />Resume</a>
+            <a
+              class="btn-link nav-item flex align-items-center"
+              href="../assets/resume-adelina.pdf"
+            >
+              <img src="../assets/export-icon.svg" alt="" />Resume</a
+            >
           </ul>
         </div>
       </nav>
@@ -56,7 +75,7 @@
     </header>
     <section id="timeline">
       <div class="container center-columns">
-        <h2><br/>Agency Highlight</h2>
+        <h2><br />Agency Highlight</h2>
         <p class="subtitle-2">
           For five years, I was part of the creative team at 8 West,
           collaborating with clients from various industries to deliver digital
@@ -166,7 +185,7 @@
                 Mobile app design and redesign for clients in the health and
                 lifestyle sectors.
               </li>
-              
+
               <li>Prototyping using Figma and Axure.</li>
               <li>Building and maintaining scalable design systems.</li>
               <li>Email Templates.</li>
@@ -246,12 +265,8 @@
             <a href="../projects/cleverspend.html" class="location-item">
               <div class="location-video">
                 <video autoplay muted loop playsinline>
-                  <source
-                    src="../assets/CleverSpend.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="../assets/CleverSpend.mp4" type="video/mp4" />
                 </video>
-               
               </div>
               <p class="subtitle-1">Clever Spend</p>
               <p class="timeline">2024 - Present</p>

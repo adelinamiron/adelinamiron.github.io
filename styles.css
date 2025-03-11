@@ -123,6 +123,7 @@ video {
 }
 .hero .pill {
   width: fit-content;
+  border: 1px solid #3c3c3c;
 }
 
 .location-item .icon {
@@ -279,9 +280,10 @@ section {
   padding-bottom: 50px;
 }
 .pill {
-  background-color: #232323;
+  background-color: rgb(35 35 35 / 55%);
   padding: 16px 32px;
   border-radius: 50px;
+  backdrop-filter: blur(12px);
 }
 .pills {
   display: flex;
@@ -409,6 +411,7 @@ footer .container {
   padding: 20px;
   transition: 0.3s all;
   border-radius: 15px;
+  background-color: #fff;
 }
 
 .hamburger-menu {
@@ -554,10 +557,11 @@ footer .container {
 
 .flex-item ul li {
   margin-bottom: 20px;
-  background-color: #232323;
   padding: 16px 24px;
   border-radius: 15px;
   line-height: 1.6;
+  background-color: rgb(35 35 35 / 55%);
+  backdrop-filter: blur(12px);
 }
 
 .group-container {

@@ -10,4 +10,10 @@ $(document).ready(function () {
       video.currentTime = 0;
     }
   );
+
+  $(window).on("scroll", function () {
+    let scrollY = $(window).scrollTop();
+    $(".big-stone").css("transform", `translateX(10%) translateY(${scrollY * 0.4}px) rotate(33deg)`);
+    $(".small-stone").css("transform", `translateX(0%) translateY(${scrollY * 0.2}px)`);
+  });
 });

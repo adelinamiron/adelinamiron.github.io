@@ -10,6 +10,9 @@
   --font-fira-mono: "Poppins", sans-serif;
   --font-body: 16px;
 }
+section {
+  padding: 0 20px;
+}
 html {
   scroll-behavior: smooth;
   background: var(--main-bg-color);
@@ -138,7 +141,6 @@ video {
   transform: translateX(10%) rotate(33deg); /* Start at normal rotation */
   transition: transform 0.1s ease-out;
 }
-
 .navbar {
   position: relative;
 }
@@ -156,6 +158,7 @@ video {
   line-height: 1.6;
   max-width: 830px;
   margin-bottom: 60px;
+  opacity: 0.85;
 }
 .subtitle-1 {
   font-family: var(--font-fira-mono);
@@ -290,10 +293,15 @@ section {
   flex-flow: row wrap;
   gap: 20px;
 }
+
 .location-items {
   display: grid;
   gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(calc(33.333% - 50px), 1fr));
+}
+.project-description-items {
+  display: flex;
+  flex-flow: column;
 }
 .location-item {
   background-color: var(--secondary-dark);
@@ -365,6 +373,61 @@ section {
 #contact-us .left-columns {
   display: flex;
   align-items: center;
+}
+
+.top-content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 150px;
+  justify-content: space-between;
+}
+.top-content-column li,
+.user-interviu-container li {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.top-content-column ul,
+.user-interviu-container ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.key-insights,
+.key-actions {
+  flex: 1;
+  border: 1px solid #3c3c3c;
+  border-radius: 15px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.user-interviu-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+
+.top-content h2 {
+  font-size: 62px;
+}
+
+.prism-code {
+  display: flex
+  ;
+      gap: 50px;
+      overflow-x: auto;
+      box-sizing: border-box;
+      width: 100%;
+}
+.prism-code pre {
+  border-radius: 20px;
+  background-color: transparent !important;
+  border: 1px solid #3c3c3c;
+}
+#information-architecture img {
+  width: 100%;
 }
 .header {
   width: 100%;
@@ -443,10 +506,113 @@ footer .container {
   z-index: 1;
   left: 0;
   right: 0;
+  padding: 0 20px;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+}
+.tab-content.active {
+  display: block;
+}
+
+#wireframes .carousel img {
+  width: 60%;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.carousel-image {
+  display: none;
+  max-width: 90%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto 30px auto;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.tab {
+  padding: 20px 20px;
+  border: 1px solid #3c3c3c;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.carousel-controls button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: 0;
+  box-sizing: content-box;
+}
+
+.carousel-header {
+  position: relative;
+}
+
+.carousel-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: fit-content;
+  font-size: 18px;
+}
+
+button:disabled {
+  background-color: rgb(63 63 63 / 65%);
+  color: #000000;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#wireframes .carousel-controls img {
+  width: 30px;
+}
+
+.tab.active {
+  background: white;
+  color: black;
 }
 
 #timeline .subtitle-2 {
-  max-width: 700px;
+  text-align: left;
 }
 
 #timeline.clever-spend .subtitle-2 {
@@ -457,6 +623,7 @@ footer .container {
   margin-bottom: 60px;
   background-color: var(--white);
   color: var(--dark-color);
+  display: table;
 }
 
 .product-page .location-items {
@@ -466,12 +633,27 @@ footer .container {
   );
 }
 
+.project-description-items {
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(calc(33% - 50px - 20px), 1fr)
+  );
+}
+
 .product-page .next-projects .location-items {
   grid-template-columns: repeat(auto-fill, minmax(calc(50% - 50px), 1fr));
 }
 
 .product-page .next-projects .location-video {
   padding: 0;
+}
+
+.project-description-container {
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  width: auto;
+  margin-bottom: 30px;
 }
 
 .product-page .location-video {
@@ -509,8 +691,6 @@ footer .container {
   line-height: 2;
 }
 
-#wireframes h2,
-#design h2,
 .next-projects h2 {
   margin-bottom: 60px;
 }
@@ -590,6 +770,15 @@ footer .container {
   }
   .subtitle-1 {
     font-size: 26px;
+  }
+
+  .top-content {
+    flex-flow: row wrap;
+    gap: 50px;
+  }
+  .top-content-column:nth-child(2),
+  .top-content-column:nth-child(3) {
+    width: 45%;
   }
 }
 
@@ -793,6 +982,46 @@ footer .container {
     margin-top: 20px;
   }
 
+  .top-content-column:nth-child(2),
+  .top-content-column:nth-child(3) {
+    width: 100%;
+  }
+
+  .top-content {
+    gap: 20px;
+  }
+
+  .top-content h2 {
+    font-size: 42px;
+  }
+  .user-interviu-container {
+    flex-flow: column;
+  }
+
+  .nav-tabs {
+    overflow: scroll;
+  }
+  .prism-code {
+    flex-flow: column;
+  }
+  .carousel-controls {
+    gap: 20px;
+  }
+  #wireframes .carousel img {
+    width: 100%;
+  }
+  .tab {
+    min-width: fit-content;
+  }
+  .carousel {
+    min-height: auto;
+  }
+  .carousel-controls button {
+    padding: 10px 10px;
+  }
+  .carousel-controls button span {
+    display: none;
+  }
   .development {
     padding-bottom: 0;
   }

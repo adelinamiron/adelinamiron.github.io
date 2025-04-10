@@ -381,6 +381,11 @@ section {
   width: 100%;
   gap: 150px;
   justify-content: space-between;
+  margin-top: 50px;
+}
+
+.top-content-column {
+  min-width: 200px;
 }
 .top-content-column li,
 .user-interviu-container li {
@@ -414,12 +419,11 @@ section {
 }
 
 .prism-code {
-  display: flex
-  ;
-      gap: 50px;
-      overflow-x: auto;
-      box-sizing: border-box;
-      width: 100%;
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+  box-sizing: border-box;
+  width: 100%;
 }
 .prism-code pre {
   border-radius: 20px;
@@ -566,6 +570,7 @@ footer .container {
   cursor: pointer;
   border-radius: 8px;
   width: 100%;
+  font-size: 16px;
 }
 
 .carousel-controls button {
@@ -577,6 +582,7 @@ footer .container {
   border-radius: 8px;
   border: 0;
   box-sizing: content-box;
+  font-size: 16px;
 }
 
 .carousel-header {
@@ -801,6 +807,7 @@ button:hover {
   }
   .product-page section {
     margin-bottom: 60px;
+    padding: 0;
   }
   .btn2 .icon,
   .btn2 .icon:after,

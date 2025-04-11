@@ -97,6 +97,7 @@ header {
   bottom: -20%;
   right: -50%;
   width: 100%;
+  display: none;
 }
 
 .hero .content {
@@ -109,6 +110,7 @@ header {
   z-index: 0;
   width: 100%;
   max-width: 453px;
+  opacity: .6;
 }
 
 .hero .container {
@@ -374,7 +376,9 @@ section {
   display: flex;
   align-items: center;
 }
-
+#user-flow img {
+  width: 100%;
+}
 .top-content {
   display: flex;
   align-items: flex-start;
@@ -385,7 +389,7 @@ section {
 }
 
 .top-content-column {
-  min-width: 200px;
+  min-width: 220px;
 }
 .top-content-column li,
 .user-interviu-container li {
@@ -987,6 +991,13 @@ button:hover {
     flex: 1 1 100%;
     padding: 0;
     margin-top: 20px;
+  }
+  .hero .content {
+    margin-top: 0;
+  }
+  .my-picture {
+    order: 1;
+    margin-top: 10px;
   }
 
   .top-content-column:nth-child(2),

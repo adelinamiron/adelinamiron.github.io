@@ -42,7 +42,10 @@
               ><img src="./assets/logo.svg" alt=""
             /></a>
             <div class="hamburger-menu btn2">
-              <a href="./assets/resume-adelina.pdf">
+              <a href="./assets/resume-adelina.pdf" onclick="gtag('event', 'project_click', {
+                'event_category': 'Header',
+                'event_label': 'Resume'
+              })">
                 <img src="./assets/export-icon.svg" alt="" /> Resume</a
               >
             </div>
@@ -77,10 +80,16 @@
                 experiences.
               </p>
               <div class="social">
-                <a href="https://www.linkedin.com/in/adelina-miron/"
+                <a href="https://www.linkedin.com/in/adelina-miron/" onclick="gtag('event', 'project_click', {
+                  'event_category': 'Social Hero',
+                  'event_label': 'Linkedin'
+                })"
                   ><img src="./assets/linkedin.svg" target="_blank" alt=""
                 /></a>
-                <a href="https://dribbble.com/adelinamiron"
+                <a href="https://dribbble.com/adelinamiron" onclick="gtag('event', 'project_click', {
+                  'event_category': 'Social Hero',
+                  'event_label': 'Dribbble'
+                })"
                   ><img src="./assets/dribbble.svg" target="_blank" alt=""
                 /></a>
               </div>
@@ -114,6 +123,10 @@
             <a
               href="./projects/cleverspend.html"
               class="location-item video-hover"
+              onclick="gtag('event', 'project_click', {
+                'event_category': 'Projects',
+                'event_label': 'Clever Spend Homepage'
+              })"
             >
               <div class="location-video">
                 <video autoplay muted loop playsinline class="video-mob">
@@ -139,6 +152,10 @@
             <a
               href="./projects/instascribe.html"
               class="location-item video-hover"
+              onclick="gtag('event', 'project_click', {
+                'event_category': 'Projects',
+                'event_label': 'Instascribe Homepage'
+              })"
             >
               <div class="location-video">
                 <video autoplay muted playsinline loop class="video-mob">
@@ -161,7 +178,10 @@
                 confidently, based on tone and style.
               </p>
             </a>
-            <a href="./projects/agency.html" class="location-item video-hover">
+            <a href="./projects/agency.html" class="location-item video-hover" onclick="gtag('event', 'project_click', {
+              'event_category': 'Projects',
+              'event_label': 'Agency Homepage'
+            })">
               <div class="location-video">
                 <video autoplay muted playsinline loop class="video-mob">
                   <source

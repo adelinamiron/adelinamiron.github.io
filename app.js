@@ -19,7 +19,7 @@ $(document).ready(function () {
     );
     $(".small-stone").css(
       "transform",
-      `translateX(0%) translateY(${scrollY * 0.2}px)`
+      `translateX(0%) translateY(${scrollY * 0.1}px)`
     );
   });
 

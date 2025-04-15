@@ -94,10 +94,10 @@ header {
 
 .small-stone {
   position: absolute;
-  bottom: -20%;
-  right: -50%;
-  width: 100%;
-  display: none;
+  bottom: -40px;
+  right: -10%;
+  left: -60px;
+  width: 130%;
 }
 
 .hero .content {
@@ -110,7 +110,7 @@ header {
   z-index: 0;
   width: 100%;
   max-width: 453px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .hero .container {
@@ -160,7 +160,7 @@ video {
   line-height: 1.6;
   max-width: 830px;
   margin-bottom: 60px;
-  opacity: 0.85;
+  opacity: 0.75;
 }
 .subtitle-1 {
   font-family: var(--font-fira-mono);
@@ -175,6 +175,7 @@ video {
   font-size: 16px;
   margin: 5px 0 0;
   color: var(--white);
+  opacity: 0.75;
 }
 .btn-link,
 .btn-link.nav-item {
@@ -317,6 +318,7 @@ section {
   color: var(--white);
   line-height: 1.6;
   margin-top: 10px;
+  opacity: 0.75;
 }
 .location-video {
   position: relative;
@@ -999,7 +1001,12 @@ button:hover {
     order: 1;
     margin-top: 10px;
   }
-
+  .hero .social {
+    margin-top: 20px;
+  }
+  .profile-image {
+    display: none;
+  }
   .top-content-column:nth-child(2),
   .top-content-column:nth-child(3) {
     width: 100%;

@@ -286,7 +286,7 @@ section {
 }
 .pill {
   background-color: rgb(35 35 35 / 55%);
-  padding: 16px 32px;
+  padding: 12px 20px;
   border-radius: 50px;
   backdrop-filter: blur(12px);
 }
@@ -295,7 +295,9 @@ section {
   flex-flow: row wrap;
   gap: 20px;
 }
-
+#timeline img {
+  max-width: 100%;
+}
 .location-items {
   display: grid;
   gap: 40px;
@@ -484,8 +486,22 @@ footer .container {
   transition: 0.3s all;
   border-radius: 15px;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#contact .subtitle-2 {
+  margin-bottom: 30px;
+}
+.hero .social a img {
+  max-height: 24px;
+}
+.hero .social a:first-child img {
+  max-height: 20px;
+}
+.hero .social a {
+  padding: 15px;
+}
 .hamburger-menu {
   display: none;
 }
@@ -556,11 +572,14 @@ footer .container {
   gap: 30px;
   margin: 0 auto 30px auto;
 }
-
+#development .key-actions {
+  padding: 30px;
+  line-height: 1.6;
+}
 .nav-tabs {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -988,6 +1007,15 @@ button:hover {
   }
 }
 @media (max-width: 767px) {
+  .social a img {
+    max-height: 24px;
+  }
+  .social a:first-child img {
+    max-height: 20px;
+  }
+  #contact .subtitle-2 {
+    margin-bottom: 0;
+  }
   .flex-item {
     flex: 1 1 100%;
     padding: 0;
@@ -1020,6 +1048,7 @@ button:hover {
   }
   .user-interviu-container {
     flex-flow: column;
+    gap: 20px;
   }
 
   .nav-tabs {
@@ -1171,7 +1200,7 @@ button:hover {
   }
   footer .logo img {
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 
   .logo,

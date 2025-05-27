@@ -37,7 +37,7 @@ body {
 .hero {
   max-width: 1440px;
   position: relative;
-  margin: 100px 0 120px 0;
+  margin: 40px 0 40px 0;
 }
 .container {
   max-width: 1440px;
@@ -146,8 +146,11 @@ video {
   position: relative;
 }
 #featured-projects {
-  margin-top: 160px;
+  margin-top: 60px;
   position: relative;
+}
+.lottie-player {
+  height: 770px;
 }
 .subtitle-2 {
   font-family: var(--font-inter);
@@ -813,6 +816,9 @@ button:hover {
 }
 
 @media (max-width: 992px) {
+  .lottie-player {
+    height: auto;
+}
   .findings {
     margin-top: 20px;
   }

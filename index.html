@@ -33,6 +33,7 @@
 
       gtag("config", "G-JTCLX9N2W9");
     </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <header>
       <div class="container-wrap">
         <!-- <img src="./assets/big-stone.png" class="big-stone" alt="" /> -->
@@ -104,17 +105,18 @@
                 /></a>
               </div>
             </div>
-            <div class="my-picture">
-              <lottie-player
-              src="https://cdn.lottielab.com/l/2hm1bA63ktA2RM.json"
-              background="transparent"
-              speed="1"
-              style="width: 100%;"
-              class="lottie-player"
-
-              
-              autoplay>
-            </lottie-player>
+            <div class="my-picture" id="animation-lottie">
+              <script>
+                var animation = bodymovin.loadAnimation({
+                  container: document.getElementById('animation-lottie'),
+                  path: 'assets/lottie-home-cleaned.json',
+                  loop: false,
+                  autoplay: true,
+                  render: 'svg',
+                  name: 'lottie animation'
+                })
+                </script>
+           
 
               <!-- <img
                 src="./assets/adelina-profile.png"
@@ -350,6 +352,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
   </body>
 </html>

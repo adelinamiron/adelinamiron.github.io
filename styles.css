@@ -10,9 +10,6 @@
   --font-fira-mono: "Poppins", sans-serif;
   --font-body: 16px;
 }
-section {
-  padding: 0 20px;
-}
 html {
   scroll-behavior: smooth;
   background: var(--main-bg-color);
@@ -37,7 +34,7 @@ body {
 .hero {
   max-width: 1440px;
   position: relative;
-  margin: 40px 0 40px 0;
+  margin: 140px 0 160px 0;
 }
 .container {
   max-width: 1440px;
@@ -135,8 +132,8 @@ video {
 }
 .big-stone {
   position: absolute;
-  top: 6%;
-  left: -30%;
+  top: -44%;
+  right: 0;
   width: 60%;
   z-index: 0;
   transform: translateX(10%) rotate(33deg); /* Start at normal rotation */
@@ -821,6 +818,9 @@ button:hover {
 }
   .findings {
     margin-top: 20px;
+  }
+  .big-stone {
+    display: none;
   }
   #timeline.clever-spend .btn-link {
     margin: 0 0 30px 0;
